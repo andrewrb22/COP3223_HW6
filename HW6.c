@@ -3,8 +3,8 @@
 
 int main(){
 
-    printf("Homework 6 on Arrays, COP3223");
+    char name[50] = { 'A', 'B', 'C', 'D'};
+    printf("First letter is %c", *(name + 0));
 
     return 0;
-    
 }
