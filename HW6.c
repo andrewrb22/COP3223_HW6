@@ -36,8 +36,11 @@ int main()
 {
 
     int score[MAX] = {0};
+    int limit = 0;
 
-    print(score, 5);
+    load(score, &limit);
+
+    print(score, limit);
 
     return 0;
 }
