@@ -3,8 +3,14 @@
 
 int main(){
 
-    char name[50] = { 'A', 'B', 'C', 'D'};
-    printf("First letter is %c", *(name + 0));
+    int A[] = {2,6,5,3,8};
+    int i;
+    for(int i = 0; i<5; i++){
+        printf("Address = %d\n", &A[i]);
+        printf("Address = %d\n", A + i);
+        printf("Value = %d\n", A[i]);
+        printf("Vaue = %d\n", *(A + i));
+    }
 
     return 0;
 }
