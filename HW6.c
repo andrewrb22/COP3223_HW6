@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
+
 //Prototypes
 // void print(int[]);
 // void load(int *, int *);
@@ -33,13 +34,14 @@ void load(int *a, int *s)
     printf("Enter how many scores: ");
     scanf("%d", s);
 
-    printf("Eter your %d scores here: ", *s);
+    printf("Enter your %d scores here: ", *s);
     for (i=0; i<*s; i++)
     {
         scanf("%d", &a[i]);
     }
 }
 //--------------------------
+
 void print(int a[], int s)
 {
     int i =0;
@@ -49,7 +51,9 @@ void print(int a[], int s)
         i++;
     }
 }
+
 //-----------------------------
+
 float average (int *a, int s){
 
     float sum = 0;
@@ -62,15 +66,18 @@ float average (int *a, int s){
 
     }
 }
+//-----------------------------
+
 int main()
 {
 
-    int score[MAX] = {51, 50};
+    int score[MAX] = {0};
     int limit = 0;
 
-    printf("the max scores is %d", high(score,2));
+    // printf("the max scores is %.2f", high(score,3));
     // load(score, &limit);
-    // print(score, limit);
+    load(score, &limit);
+    print(score, limit);
     // float av = average(score,2);
     // printf("The Average of the %d is =  %.2f ",2, av);
 
